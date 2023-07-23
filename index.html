@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dracula">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +23,7 @@
     </style>
   </head>
   <body>
-    <header class="shadow-lg sticky top-0 z-50 bg-white">
+    <header class="shadow-lg sticky top-0 z-50 bg-neutral">
       <nav class="container mx-auto">
         <div class="navbar ">
           <div class="navbar-start">
@@ -54,7 +54,7 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost normal-case font-bold text-2xl lg:text-4xl"
+            <a class="btn btn-ghost normal-case font-semibold text-2xl lg:text-4xl"
               >Bike Dekho</a
             >
           </div>
@@ -85,7 +85,7 @@
               <img class="w-full h-auto" src="images/slider/bike5.png" />
             </div>
             <div class="lg:w-6/12 text-center md:text-left">
-              <h1 class="lg:text-5xl text-xl font-bold lg:w-4/5">
+              <h1 class="lg:text-5xl text-xl font-semibold lg:w-4/5">
                 Ride-on R15 V4 with Smile
               </h1>
               <p class="py-6 lg:w-3/5">
@@ -108,9 +108,9 @@
       </div>
 
       <div class="lg:flex justify-center items-center gap-20 w-9/12 mx-auto">
-        <img class="w-full h-auto" src="./images/slider/bike1.png" alt="">
-        <img class="w-full h-auto" src="./images/slider/bike3.png" alt="">
-        <img class="w-full h-auto" src="/images/others/feature-bike.png" alt="">
+        <img class="w-full h-auto border" src="./images/slider/bike1.png" alt="">
+        <img class="w-full h-auto border" src="/images/slider/bike2.png" alt="">
+        <img class="w-full h-auto border" src="./images/slider/bike3.png" alt="">
       </div>
 
       <!-- latest news zone -->
@@ -228,7 +228,87 @@
         </div>
       </div>
 
+      <!-- FAQ zone -->
+
+      <div class="text-center lg:mt-28 my-10">
+        <h2 class="lg:text-5xl text-2xl font-semibold">Frequently <span class="text-[#E76F51]">Asked Questions</span></h2>
+      </div>
+
+      <div class="hero container mx-auto">
+        <div class="hero-content flex-col lg:flex-row lg:gap-28">
+          <img src="./images/others/faq.png" class="w-1/2 lg:w-full" />
+          <div>
+            <div class="collapse collapse-arrow border  my-3">
+              <input type="radio" name="my-accordion-2" checked="checked" /> 
+              <div class="collapse-title text-xl font-medium">
+                <Translate text="Click to open this one and close others" />
+                <p class="lg:text-xl text-sm font-semibold my-3">What are the most important things I should
+                know about riding a bike?</p>
+              </div>
+              <div class="collapse-content"> 
+                <p class="lg:text-xl text-sm my-3">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border my-3">
+              <input type="radio" name="my-accordion-2" /> 
+              <div class="collapse-title text-xl font-medium">
+                <Translate text="Click to open this one and close others" />
+                <p class="lg:text-xl text-sm font-semibold my-3">How can I tell if my helmet is old and I need a 
+                  new one?</p>
+              </div>
+              <div class="collapse-content"> 
+                <p class="lg:text-xl text-sm my-3">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border  my-3">
+              <input type="radio" name="my-accordion-2" /> 
+              <div class="collapse-title text-xl font-medium">
+                <Translate text="Click to open this one and close others" />
+                <p class="lg:text-xl text-sm font-semibold my-3">My bike has been in storage is it safe to ride?</p>
+              </div>
+              <div class="collapse-content"> 
+                <p class="lg:text-xl text-sm my-3">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border my-3">
+              <input type="radio" name="my-accordion-2" /> 
+              <div class="collapse-title text-xl font-medium">
+                <Translate text="Click to open this one and close others" />
+                <p class="lg:text-xl text-sm font-semibold my-3">What rules should I follow when riding my bike?</p>
+              </div>
+              <div class="collapse-content"> 
+                <p class="lg:text-xl text-sm my-3">Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </main>
-    <footer></footer>
+
+    <footer class="footer lg:text-xl md:justify-between p-10 mt-10 bg-neutral text-neutral-content">
+      <div class=" gap-5">
+        <p>Download Now</p>
+        <p>About</p>
+        <p>© 2020 bike. All rights reserved</p>
+      </div> 
+      <div class="gap-5">
+        <p>Licence</p>
+        <p>Features</p>
+        <p>Pricing</p>
+      </div> 
+      <div class="gap-5">
+        <p>Careers</p>
+        <p>Help</p>
+        <p>Privacy Policy</p>
+      </div> 
+      <div>
+        <span class="text-lg font-medium">Get the App</span> 
+        <div class="flex-col">
+          <img class="w-1/2 pb-3" src="./images/others/android.png" alt="">
+          <img class="w-1/2" src="./images/others/ios.png" alt="">
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
